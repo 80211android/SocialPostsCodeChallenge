@@ -4,11 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.challengetwo.R
 import com.example.challengetwo.databinding.PostItemBinding
-
 import com.example.challengetwo.presentation.posts.models.Post
 
 class PostsAdapter(
@@ -31,7 +28,6 @@ class PostsAdapter(
         (holder as PostDetailViewHolder).bind(posts[position])
     }
 
-
     fun updatePosts(post: List<Post>) {
         posts.clear()
         posts.addAll(post)
@@ -46,14 +42,14 @@ class PostsAdapter(
             with(binding) {
                 name.text = post.userName
                 comment.text = post.comment
+                photo.setImageResource(R.drawable.madison_fgf_challenge)
 
-                like.text = post.like.toString()
-                Glide
-                    .with(itemView)
-                    .load(post.photoUrl)
-                    .circleCrop()
-                    .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
-                    .into(photo);
+//                Glide
+//                    .with(itemView)
+//                    .load(post.photoUrl)
+//                    .circleCrop()
+//                    .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+//                    .into(photo);
             }
         }
     }

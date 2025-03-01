@@ -16,7 +16,6 @@ import com.example.challengetwo.presentation.posts.models.Post
 import com.example.challengetwo.presentation.utils.makeGone
 import com.example.challengetwo.presentation.utils.makeVisible
 
-
 class PostsFragment : Fragment() {
 
     private val viewModel: PostsViewModel by viewModels()
@@ -46,7 +45,6 @@ class PostsFragment : Fragment() {
                 layoutManager = LinearLayoutManager(context)
                 adapter = postsAdapter
             }
-
             swipeRefreshLayout.setOnRefreshListener {
                 swipeRefreshLayout.isRefreshing = false
                 viewModel.getPosts()

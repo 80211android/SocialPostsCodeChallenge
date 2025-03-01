@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/employeeCard"
+        android:id="@+id/postCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_size_20dp"
@@ -52,6 +52,7 @@
                 android:layout_marginTop="10dp"
                 app:layout_constraintStart_toStartOf="@id/name"
                 app:layout_constraintTop_toBottomOf="@id/comment"
+                android:text="Liked"
                 tools:text="like" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
