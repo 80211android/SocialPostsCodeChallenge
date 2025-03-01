@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ChallengeTwo</string>
+
+    <!-- Error messages -->
+    <string name="error_loading">Something went wrong.</string>
+
+    <!-- Employee Fragment -->
+    <string name="empty_list_posts">There are no posts.</string>
+
+</resources>

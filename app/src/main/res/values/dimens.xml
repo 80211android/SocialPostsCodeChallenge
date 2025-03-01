@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margins -->
+    <dimen name="medium_size_margin">25dp</dimen>
+    <dimen name="margin_size_20dp">20dp</dimen>
+    <dimen name="margin_size_10dp">10dp</dimen>
+
+    <dimen name="small_size_photo">70dp</dimen>
+
+    <!-- Text dimensions -->
+    <dimen name="medium_size_text">20sp</dimen>
+
+</resources>
